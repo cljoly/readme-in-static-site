@@ -1,9 +1,6 @@
 #!/usr/bin/awk -f
 
-BEGIN {
-    removing = 0
-    inserting = 0
-}
+BEGIN { removing = 0; inserting = 0 }
 
 /^<!--+ remove -+->$/ {
     removing = 1
@@ -23,6 +20,4 @@ BEGIN {
     next
 }
 
-removing == 0 {
-    print $0
-}
+removing == 0 { print $0 }

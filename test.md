@@ -6,13 +6,15 @@ date: "2222-11-11"
 end_insert -->
 
 <!-- remove -->
-removed
+Present in the .md, removed in the output
 <!-- end_remove -->
 
-kept
+**kept**
+Present in both the .md and the output
 
 <!-- insert
-inserted
+**inserted**
+only in the output
 end_insert -->
 
 <!-- insert
