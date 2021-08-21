@@ -27,7 +27,7 @@ Use these two comments for text you want to have in your raw .md file, but not i
 
 ## Example
 
-### Input
+### [Input (typically on GitHub)](./test.md)
 
 ```markdown
 <!-- insert
@@ -55,7 +55,7 @@ some complicated html
 end_insert -->
 ```
 
-### Output
+### [Output (typically in zola or hugo)](./test_output.md)
 ```
 ---
 title: "My Page Title"
