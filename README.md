@@ -33,48 +33,4 @@ Use these two comments for text you want to have in your raw .md file, but not i
 
 ## Example
 
-### [Input (typically on GitHub)](./test.md)
-
-```markdown
-<!-- insert
----
-title: "My Page Title"
-date: "2222-11-11"
----
-end_insert -->
-
-<!-- remove -->
-Present in the .md, removed in the output
-<!-- end_remove -->
-
-**kept**
-Present in both the .md and the output
-
-<!-- insert
-**inserted**
-only in the output
-end_insert -->
-
-<!-- insert
-some complicated html
-<script id="asciicast-427156" src="https://asciinema.org/a/427156.js" async></script>
-end_insert -->
-```
-
-### [Output (typically in zola or hugo)](./test_output.md)
-```
----
-title: "My Page Title"
-date: "2222-11-11"
----
-
-
-**kept**
-Present in both the .md and the output
-
-**inserted**
-only in the output
-
-some complicated html
-<script id="asciicast-427156" src="https://asciinema.org/a/427156.js" async></script>
-```
+See the [input (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md)
