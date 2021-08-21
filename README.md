@@ -12,7 +12,7 @@ end_insert -->
 Insert your GitHub readme in your static site (with any markdown-based static file generator) and apply transformations.
 
 For instance with [hugo][] or [zola][], run:
-```
+```sh
 ./riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
 it is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉.
