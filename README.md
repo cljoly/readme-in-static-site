@@ -1,4 +1,10 @@
+<!-- insert
+title: "Readme In Static Site (RISS)"
+date: 2021-01-17T20:44:12Z
+end_insert -->
+<!-- remove -->
 # Readme In Static Site (RISS)
+<!-- end_remove -->
 
 Insert your github readme in your static site (hugo, zola…) with small transformations, for instance to add a [frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter).
 
