@@ -24,8 +24,9 @@ To try it with [Hugo][hugo] or [Zola][zola], run:
 wget https://joly.pw/riss.awk
 awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
+It should also work with any markdown-based static file generator.
 
-It is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉. It should also work with any markdown-based static file generator.
+It is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉. That’s particularly handy to [automate the README update](#automate-with-github-actions).
 
 ## Example
 
