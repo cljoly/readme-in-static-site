@@ -9,7 +9,15 @@ end_insert -->
 # 💎 Readme In Static Site (RISS)
 <!-- end_remove -->
 
-Insert your GitHub readme in your static site and apply transformations.
+Insert your GitHub readme in your static site and apply transformations. For instance, you can read this [readme on Github](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
+
+### Why?
+
+The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But so does your website. Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
+
+See the [Example](#Example) section for example of things that would differ between your GitHub readme and a page on your website.
+
+### Run it
 
 To try it with [Hugo][hugo] or [Zola][zola], run:
 ```sh
@@ -18,12 +26,6 @@ awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
 
 It is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉. It should also work with any markdown-based static file generator.
-
-### Why?
-
-The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But so does your website. Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
-
-See the [Example](#Example) section for example of things that would differ between your GitHub readme and a page on your website.
 
 ## Example
 
@@ -72,7 +74,7 @@ The output will contain only the asciinema player:
 
 ### More
 
-See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can also compare this [readme on Github](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [the page on my website](https://joly.pw/readme-in-static-site) to learn how the `<!-- insert` and the other special sequences are escaped.
+See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives an other example of asciinema conversion using a Hugo shortcode).
 
 ## Transformations Reference
 
