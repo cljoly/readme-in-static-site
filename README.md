@@ -1,6 +1,6 @@
-# readme-static-site
+# Readme In Static Site (RISS)
 
-Insert your github readme in your static site (hugo, zola…) with small transformations.
+Insert your github readme in your static site (hugo, zola…) with small transformations, for instance to add a [frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter).
 
 ## Codes
 
