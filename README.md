@@ -11,9 +11,9 @@ end_insert -->
 
 Insert your GitHub readme in your static site and apply transformations.
 
-To try it with [hugo][] or [zola][], run:
+To try it with [Hugo][hugo] or [Zola][zola], run:
 ```sh
-curl https://joly.pw/riss.awk -o riss.awk
+wget https://joly.pw/riss.awk
 awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
 
@@ -105,6 +105,8 @@ Use these two comments for text you want to have in your raw .md file, but not i
     <!-- end_remove -->
 
 ## Contributions are welcome!
+
+Feel free to open an issue to discuss something or to send a PR.
 
 [hugo]: https://gohugo.io/
 [zola]: https://www.getzola.org/
