@@ -108,6 +108,46 @@ Use these two comments for text you want to have in your raw .md file, but not i
     <!-- remove -->
     <!-- end_remove -->
 
+## Automate with GitHub Actions
+
+You can automatically update the markdown file in the sources of your site with GitHub Actions. You can put this very simple workflow in `.github/workflows/readme.yml`:
+
+```yaml
+name: Update README files
+
+on:
+  schedule:
+    - cron: '30 */2 * * *'
+  push:
+    branches:
+    - master
+  # To run this workflow manually from GitHub GUI
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v2
+    - name: Get the latest READMEs
+      run: make readme-update
+    - name: Commit and push if there are changes
+      run: |-
+        git diff
+        git config --global user.email "bot@example.com"
+        git config --global user.name "bot"
+        git diff --quiet || (git add -u && git commit -m "Update READMEs")
+        git push
+```
+
+and then your `Makefile` may contain something like:
+
+```make
+readme-update:
+	curl https://raw.githubusercontent.com/cljoly/readme-in-static-site/main/README.md | awk -f riss.awk >content/readme-in-static-site.md
+```
+
 ## Contributions are welcome!
 
 Feel free to open an issue to discuss something or to send a PR.
