@@ -15,7 +15,7 @@ Insert your GitHub readme in your static site and apply transformations. For ins
 
 The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But so does your website. Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
 
-See the [Example](#Example) section for example of things that would differ between your GitHub readme and a page on your website.
+See the [Example](#example) section for example of things that would differ between your GitHub readme and a page on your website.
 
 ### Run it
 
