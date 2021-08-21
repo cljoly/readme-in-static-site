@@ -72,6 +72,8 @@ The output will contain only the asciinema player:
 
     <asciinema-player src="./telescope.cast" poster="npt:0:04"></asciinema-player>
 
+*Note*: you also need to add the JS/CSS files of the asciinema player somewhere in your theme.
+
 ### More
 
 See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives an other example of asciinema conversion using a Hugo shortcode).
