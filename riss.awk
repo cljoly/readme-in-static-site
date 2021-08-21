@@ -13,10 +13,20 @@
 #     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #     See the License for the specific language governing permissions and
 #     limitations under the License.
-
 BEGIN {
-	removing = 0
-	inserting = 0
+	removing = 0	# Sequence to remove started
+	inserting = 0	# Sequence to insert the content of the comment started
+	escape = 0	# Escape a sequence
+}
+
+escape == 1 {
+	escape = 0
+	print $0
+	next
+}
+
+/^```html$/ {
+	escape = 1
 }
 
 /^<!--+ remove -+->$/ {
