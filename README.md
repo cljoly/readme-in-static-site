@@ -9,7 +9,7 @@ end_insert -->
 # 💎 Readme In Static Site (RISS)
 <!-- end_remove -->
 
-Insert your GitHub readme in your static site (with any markdown-based static file generator) and apply transformations.
+Insert your GitHub readme in your static site and apply transformations.
 
 To try it with [hugo][] or [zola][], run:
 ```sh
@@ -17,7 +17,7 @@ curl https://joly.pw/riss.awk -o riss.awk
 awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
 
-It is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉.
+It is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉. It should also work with any markdown-based static file generator.
 
 ### Why?
 
