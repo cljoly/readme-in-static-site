@@ -1,38 +1,108 @@
 <!-- insert
 ---
-title: "Readme In Static Site (RISS)"
-date: 2021-01-17T20:44:12Z
+title: "💎 Readme In Static Site (RISS)"
+date: 2021-08-21T08:15:54
 ---
+{{< github_badge >}}
 end_insert -->
 <!-- remove -->
-# Readme In Static Site (RISS)
+# 💎 Readme In Static Site (RISS)
 <!-- end_remove -->
 
-Insert your github readme in your static site (hugo, zola…) with small transformations, for instance to add a [frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter).
+Insert your GitHub readme in your static site (with any markdown-based static file generator) and apply transformations.
 
-## Codes
+For instance with [hugo][] or [zola][], run:
+```
+./riss.awk /path/to/my-project/readme.md > content/my-project.md
+```
+it is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉.
+
+### Why?
+
+The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But so does your website. Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
+
+See the [Example](#Example) section for example of things that would differ between your GitHub readme and a page on your website.
+
+## Example
+
+### Add a front matter
+
+Most static site generators require a “[frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter)” at the beginning of a markdown file to attach some metadata. But you don’t want to add this on your GitHub readme! Let’s hide this on GitHub and have it in the script’s output.
+
+In you .md file on GitHub, put:
+
+    <!-- insert
+    ---
+    title: "Readme In Static Site (RISS)"
+    date: 2021-08-21T10:15:54
+    ---
+    end_insert -->
+    <!-- remove -->
+    
+    # Readme In Static Site (RISS)
+    <!-- end_remove -->
+
+The output of the script will be:
+
+    ---
+    title: "Readme In Static Site (RISS)"
+    date: 2021-08-21T10:15:54
+    ---
+
+and this piece of yaml will be hidden on GitHub!
+
+### Replace Asciinema Image
+
+You can’t embed the asciinema player on GitHub for security reasons. So the [asciinema documentation](https://asciinema.org/docs/embedding) suggests to use an image there and to link it to a webpage with the player. But on your own website, you can embed this player.
+
+In your .md file, put:
+
+    <!-- remove -->
+    [![Finding the repositories with “telescope” in their name, with the README in the panel on the right](https://asciinema.org/a/427156.svg)](https://asciinema.org/a/427156)
+    <!-- end_remove -->
+    <!-- insert
+    <asciinema-player src="./telescope.cast" poster="npt:0:04"></asciinema-player>
+    end_insert -->
+
+The output will contain only the asciinema player:
+
+    <asciinema-player src="./telescope.cast" poster="npt:0:04"></asciinema-player>
+
+### More
+
+See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can also compare this [readme on Github](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [the page on my website](https://joly.pw/readme-in-static-site) to learn how the `<!-- insert` and the other special sequences are escaped.
+
+## Transformations Reference
+
+The transformations are driven by html comments, so that you can have different results when comments are ignored (e.g. in your GitHub readme) and after executing the script on your markdown file.
+
+### Escaping
+
+**It is important that your comment starts at the beginning of the line:** spaces are used for escaping, meaning that if the comment has spaces at the beginning of the line, it is ignored.
+
+So this is escaped
+```html
+    <!-- insert
+```
+but this is not
+
+    <!-- insert
 
 ### Insertion
 
 Use these two lines for text you want to have in your output, but not in the raw .md file.
-```html
-<!-- insert
-```
 
-```html
-end_insert -->
-```
+    <!-- insert
+    end_insert -->
 
 ### Remove
 
 Use these two comments for text you want to have in your raw .md file, but not in the output
-```html
-<!-- remove -->
-```
-```html
-<!-- end_remove -->
-```
 
-## Example
+    <!-- remove -->
+    <!-- end_remove -->
 
-See the [input (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md)
+## Contributions are welcome!
+
+[hugo]: https://gohugo.io/
+[zola]: https://www.getzola.org/
