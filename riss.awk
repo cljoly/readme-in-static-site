@@ -16,17 +16,6 @@
 BEGIN {
 	removing = 0	# Sequence to remove started
 	inserting = 0	# Sequence to insert the content of the comment started
-	escape = 0	# Escape a sequence
-}
-
-escape == 1 {
-	escape = 0
-	print $0
-	next
-}
-
-/^```html$/ {
-	escape = 1
 }
 
 /^<!--+ remove -+->$/ {
