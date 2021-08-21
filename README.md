@@ -17,9 +17,6 @@ Insert your github readme in your static site (hugo, zola…) with small transfo
 Use these two lines for text you want to have in your output, but not in the raw .md file.
 ```html
 <!-- insert
-```
-
-```html
 end_insert -->
 ```
 
@@ -28,8 +25,6 @@ end_insert -->
 Use these two comments for text you want to have in your raw .md file, but not in the output
 ```html
 <!-- remove -->
-```
-```html
 <!-- end_remove -->
 ```
 
