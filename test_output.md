@@ -12,3 +12,9 @@ only in the output
 
 some complicated html
 <script id="asciicast-427156" src="https://asciinema.org/a/427156.js" async></script>
+
+This gets escaped:
+```html
+  <!-- remove -->
+```
+

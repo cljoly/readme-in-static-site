@@ -24,6 +24,6 @@ end_insert -->
 
 This gets escaped:
 ```html
-<!-- remove -->
+  <!-- remove -->
 ```
 
