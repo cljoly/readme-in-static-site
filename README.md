@@ -18,7 +18,7 @@ This script allows you to insert your GitHub README in your static site and appl
 The GitHub README of your repo needs to efficiently describe your project to GitHub’s visitor. But featuring your project on your website allows you to (among other things):
 * have more control on the theme and layout,
 * insert scripts that GitHub would prohibit (like [asciinema](#replace-asciinema-image)),
-* have your project’s homepage independent of your hosting platform.
+* have your project’s homepage independent of your hosting platform, if you wish to change at some point.
 
 Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences!
 
