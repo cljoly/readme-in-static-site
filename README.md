@@ -11,7 +11,7 @@ end_insert -->
 
 [![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml)
 
-Insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
+This script allows you to insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
 
 ### Why?
 
@@ -84,6 +84,8 @@ The output will contain only the asciinema player:
 ### More
 
 See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [README](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives another example of asciinema conversion using a Hugo shortcode).
+
+With some shell scripting, you could also transform all the markdown files in your repo and put them in a subdirectory of your site, so that your project’s documentation, policy, etc… lives on your site.
 
 ## Transformations Reference
 
