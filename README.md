@@ -17,16 +17,15 @@ The GitHub Readme of your repo needs to efficiently describe your project to Git
 
 See the [Example](#example) section for example of things that would differ between your GitHub readme and a page on your website.
 
-### Run it
+### Run it (nothing to install)
 
 To try it with [Hugo][hugo] or [Zola][zola], run:
 ```sh
 wget https://joly.pw/riss.awk
 awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
-It should also work with any markdown-based static file generator.
 
-It is an `awk` script, so you don’t need to install anything on GNU/Linux 🎉. That’s particularly handy to [automate the README update](#automate-with-github-actions).
+If you don’t use Hugo or Zola, no problem! It should also work with any markdown-based static-site generator. Just put the markdown file where it makes sense for that generator.
 
 ## Example
 
