@@ -1,31 +1,31 @@
 <!-- insert
 ---
-title: "💎 Readme In Static Site (RISS)"
+title: "💎 README In Static Site (RISS)"
 date: 2021-08-21T08:15:54
 ---
 {{< github_badge >}}
 end_insert -->
 <!-- remove -->
-# 💎 Readme In Static Site (RISS)
+# 💎 README In Static Site (RISS)
 <!-- end_remove -->
 
-Insert your GitHub readme in your static site and apply transformations. For instance, you can read this [readme on Github](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
+Insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on Github](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
 
 ### Why?
 
-The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But featuring your project on your website allows you to (among other things):
+The GitHub README of your repo needs to efficiently describe your project to GitHub’s visitor. But featuring your project on your website allows you to (among other things):
 - have more control on the theme and layout,
 - insert scripts that GitHub would prohibit (like [asciinema](#replace-asciinema-image)),
 - have your project’s homepage independant from your hosting platform.
 
-Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
+Chances are that for small projects the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences!
 
 ### Run it (nothing to install)
 
 To try it with [Hugo][hugo] or [Zola][zola], run the following in your static-site sources:
 ```sh
 wget https://joly.pw/riss.awk
-awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
+awk -f riss.awk /path/to/my-project/README.md > content/my-project.md
 ```
 
 If you don’t use Hugo or Zola, no problem! It should also work with any markdown-based static-site generator. Just put the markdown file where it makes sense for that generator.
@@ -36,25 +36,25 @@ To automatically update these files in your static-site sources, see [Automate w
 
 ### Add a front matter
 
-Most static site generators require a “[frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter)” at the beginning of a markdown file to attach some metadata. But you don’t want to add this on your GitHub readme! Let’s hide this on GitHub and have it in the script’s output.
+Most static site generators require a “[frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter)” at the beginning of a markdown file to attach some metadata. But you don’t want to add this on your GitHub README! Let’s hide this on GitHub and have it in the script’s output.
 
 In you .md file on GitHub, put:
 
     <!-- insert
     ---
-    title: "Readme In Static Site (RISS)"
+    title: "README In Static Site (RISS)"
     date: 2021-08-21T10:15:54
     ---
     end_insert -->
     <!-- remove -->
     
-    # Readme In Static Site (RISS)
+    # README In Static Site (RISS)
     <!-- end_remove -->
 
 The output of the script will be:
 
     ---
-    title: "Readme In Static Site (RISS)"
+    title: "README In Static Site (RISS)"
     date: 2021-08-21T10:15:54
     ---
 
@@ -81,11 +81,11 @@ The output will contain only the asciinema player:
 
 ### More
 
-See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives an other example of asciinema conversion using a Hugo shortcode).
+See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [README](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives an other example of asciinema conversion using a Hugo shortcode).
 
 ## Transformations Reference
 
-The transformations are driven by html comments, so that you can have different results when comments are ignored (e.g. in your GitHub readme) and after executing the script on your markdown file.
+The transformations are driven by html comments, so that you can have different results when comments are ignored (e.g. in your GitHub README) and after executing the script on your markdown file.
 
 ### Escaping
 
