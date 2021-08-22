@@ -13,19 +13,24 @@ Insert your GitHub readme in your static site and apply transformations. For ins
 
 ### Why?
 
-The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But so does your website. Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
+The GitHub Readme of your repo needs to efficiently describe your project to GitHub’s visitor. But featuring your project on your website allows you to (among other things):
+- have more control on the theme and layout,
+- insert scripts that GitHub would prohibit (like [asciinema](#replace-asciinema-image)),
+- have your project’s homepage independant from your hosting platform.
 
-See the [Example](#example) section for example of things that would differ between your GitHub readme and a page on your website.
+Chances are that for small projects the page about your project is very similar to the GitHub readme. Don’t duplicate efforts, just describe the differences!
 
 ### Run it (nothing to install)
 
-To try it with [Hugo][hugo] or [Zola][zola], run:
+To try it with [Hugo][hugo] or [Zola][zola], run the following in your static-site sources:
 ```sh
 wget https://joly.pw/riss.awk
 awk -f riss.awk /path/to/my-project/readme.md > content/my-project.md
 ```
 
 If you don’t use Hugo or Zola, no problem! It should also work with any markdown-based static-site generator. Just put the markdown file where it makes sense for that generator.
+
+To automatically update these files in your static-site sources, see [Automate with GitHub Actions](#automate-with-github-actions) below.
 
 ## Example
 
