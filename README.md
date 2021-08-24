@@ -85,7 +85,7 @@ The output will contain only the asciinema player:
 
 See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [README](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives another example of asciinema conversion using a Hugo shortcode).
 
-With some shell scripting, you could also transform all the markdown files in your repo and put them in a subdirectory of your site, so that your project’s documentation, policy, etc… lives on your site.
+With some shell scripting, you could also transform all the markdown files in your repo and put them in a subdirectory of your site, so that your project’s documentation, policy, etc… lives on your site or even on a site of its own.
 
 ## Transformations Reference
 
