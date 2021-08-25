@@ -4,7 +4,9 @@ title: "💎 README In Static Site (RISS)"
 date: 2021-08-21T08:15:54
 ---
 {{< github_badge >}}
+{{< rawhtml >}}
 <div class="badges">
+{{< /rawhtml >}}
 end_insert -->
 <!-- remove -->
 # 💎 README In Static Site (RISS)
@@ -13,7 +15,9 @@ end_insert -->
 [![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cljoly/readme-in-static-site)
 
 <!-- insert
+{{< rawhtml >}}
 </div>
+{{< /rawhtml >}}
 end_insert -->
 
 This script allows you to insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
