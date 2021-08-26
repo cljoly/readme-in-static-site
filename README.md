@@ -88,7 +88,7 @@ The output will contain only the asciinema player:
 
     <asciinema-player src="./telescope.cast" poster="npt:0:04"></asciinema-player>
 
-*Note*: you also need to add the JS/CSS files of the asciinema player somewhere in your theme.
+*Note*: you also need to add the JS/CSS files of the asciinema player somewhere in your theme. This [Hugo module][hugo_ascii] makes it easy.
 
 ### More
 
@@ -174,3 +174,4 @@ Feel free to open an issue to discuss something or to send a PR.
 
 [hugo]: https://gohugo.io/
 [zola]: https://www.getzola.org/
+[hugo_ascii]: https://cj.rs/gohugo-asciinema/
