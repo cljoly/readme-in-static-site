@@ -20,7 +20,7 @@ end_insert -->
 {{< /rawhtml >}}
 end_insert -->
 
-This script allows you to insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
+This [fast][] script allows you to insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
 
 ### Why?
 
@@ -96,6 +96,12 @@ See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-s
 
 With some shell scripting, you could also transform all the markdown files in your repo and put them in a subdirectory of your site, so that your project’s documentation, policy, etc… lives on your site or even on a site of its own.
 
+### Your example!
+
+Have you used this script to transform some markdown (or other) and insert it on your website? [Open an issue][issue] if you would like a link to your use case from this README!
+
+- **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://joly.pw/telescope-repo-nvim/); features an Asciinema clip
+
 ## Transformations Reference
 
 The transformations are driven by HTML comments, so that you can have different results when comments are ignored (e.g. in your GitHub README) and after executing the script on your markdown file.
@@ -125,6 +131,24 @@ Use these two comments for text you want to have in your raw .md file, but not i
 
     <!-- remove -->
     <!-- end_remove -->
+
+## Benchmark
+
+**Processes 17600 lines in 10 ms**
+
+```bash
+$ for i in {1..100}; do shuf README.md >>bench.md; done # Create a big md file
+$ wc -l README.md
+176 README.md
+$ wc -l bench.md
+17600 bench.md
+$ hyperfine 'awk -f riss.awk README.md' 'awk -f riss.awk bench.md'
+```
+
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `awk -f riss.awk README.md` | 2.8 ± 0.2 | 2.4 | 3.7 | 1.00 |
+| `awk -f riss.awk bench.md` | 9.7 ± 0.4 | 8.9 | 10.7 | 3.46 ± 0.30 |
 
 ## Automate with GitHub Actions
 
@@ -168,10 +192,12 @@ readme-update:
 
 ## Contributions are welcome!
 
-Feel free to open an issue to discuss something or to send a PR.
+Feel free to [open an issue][issue] to discuss something or to send a PR.
 
 ![GitHub](https://img.shields.io/github/license/cljoly/readme-in-static-site)
 
 [hugo]: https://gohugo.io/
 [zola]: https://www.getzola.org/
 [hugo_ascii]: https://cj.rs/gohugo-asciinema/
+[issue]: https://github.com/cljoly/readme-in-static-site/issues/new
+[fast]: #benchmark
