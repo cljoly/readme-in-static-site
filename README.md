@@ -96,11 +96,11 @@ See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-s
 
 With some shell scripting, you could also transform all the markdown files in your repo and put them in a subdirectory of your site, so that your project’s documentation, policy, etc… lives on your site or even on a site of its own.
 
-### Your example!
+### Your Example!
 
 Have you used this script to transform some markdown (or other) and insert it on your website? [Open an issue][issue] if you would like a link to your use case from this README!
 
-- **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://joly.pw/telescope-repo-nvim/); features an Asciinema clip
+* **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://joly.pw/telescope-repo-nvim/); features an Asciinema clip
 
 ## Transformations Reference
 
