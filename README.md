@@ -12,7 +12,7 @@ end_insert -->
 # 💎 README In Static Site (RISS)
 <!-- end_remove -->
 
-[![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cljoly/readme-in-static-site)
+[![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cljoly/readme-in-static-site)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk)
 
 <!-- insert
 {{< rawhtml >}}
