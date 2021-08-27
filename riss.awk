@@ -39,7 +39,7 @@ BEGIN {
 	next
 }
 
-!removing {
+! removing {
 	print $0
 }
 
