@@ -20,7 +20,7 @@ end_insert -->
 {{< /rawhtml >}}
 end_insert -->
 
-This [fast][] script allows you to insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://joly.pw/readme-in-static-site).
+This [fast][] [script][] allows you to insert your GitHub README in your static site and apply transformations. For instance, you can read this [README on GitHub](https://github.com/cljoly/readme-in-static-site/blob/main/README.md) and [on my website](https://cj.rs/readme-in-static-site).
 
 ### Why?
 
@@ -35,7 +35,7 @@ Chances are that for small projects, the page about your project is very similar
 
 To try it with [Hugo][hugo] or [Zola][zola], run the following in your static-site sources:
 ```sh
-wget https://joly.pw/riss.awk
+wget https://cj.rs/riss.awk
 awk -f riss.awk /path/to/my-project/README.md > content/my-project.md
 ```
 
@@ -92,7 +92,7 @@ The output will contain only the asciinema player:
 
 ### More
 
-See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [README](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://joly.pw/telescope-repo-nvim/) (this gives another example of asciinema conversion using a Hugo shortcode).
+See the [input file (typically on GitHub)](https://github.com/cljoly/readme-in-static-site/blob/main/test.md) and the [output of the script](https://github.com/cljoly/readme-in-static-site/blob/main/test_output.md). You can find another real word [README](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md) converted to a [webpage](https://cj.rs/telescope-repo-nvim/) (this gives another example of asciinema conversion using a Hugo shortcode).
 
 With some shell scripting, you could also transform all the markdown files in your repo and put them in a subdirectory of your site, so that your project’s documentation, policy, etc… lives on your site or even on a site of its own.
 
@@ -100,7 +100,7 @@ With some shell scripting, you could also transform all the markdown files in yo
 
 Have you used this script to transform some markdown (or other) and insert it on your website? [Open an issue][issue] if you would like a link to your use case from this README!
 
-* **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://joly.pw/telescope-repo-nvim/); features an Asciinema clip
+* **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://cj.rs/telescope-repo-nvim/); features an Asciinema clip
 
 ## Transformations Reference
 
@@ -201,3 +201,4 @@ Feel free to [open an issue][issue] to discuss something or to send a PR.
 [hugo_ascii]: https://cj.rs/gohugo-asciinema/
 [issue]: https://github.com/cljoly/readme-in-static-site/issues/new
 [fast]: #benchmark
+[script]: https://cj.rs/riss.awk
