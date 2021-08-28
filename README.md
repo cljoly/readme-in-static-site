@@ -117,7 +117,7 @@ If you find this script useful, please consider inserting the following in your 
 ```html
 <!-- Powered by https://cj.rs/riss -->
 ```
-This will help other people find the script. The script will even thank you if this is present!
+This will help other people find the script. *Thanks for spreading the word!*
 
 If you feel especially charitable, you could put this badge somewhere:
 
@@ -127,7 +127,6 @@ with for instance this code:
 ```markdown
 [![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
 ```
-
 
 ### Escaping
 
