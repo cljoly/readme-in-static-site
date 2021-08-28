@@ -1,7 +1,8 @@
 <!-- insert
 ---
-title: "💎 README In Static Site (RISS)"
+title: "README In Static Site (RISS)"
 date: 2021-08-21T08:15:54
+description: "💎 Insert your github readme in your static site."
 ---
 {{< github_badge >}}
 {{< rawhtml >}}
