@@ -4,16 +4,18 @@ title: "README In Static Site (RISS)"
 date: 2021-08-21T08:15:54
 description: "💎 Insert your github readme in your static site."
 ---
+<!-- Powered by https://cj.rs/riss -->
 {{< github_badge >}}
 {{< rawhtml >}}
 <div class="badges">
 {{< /rawhtml >}}
 end_insert -->
+
 <!-- remove -->
 # 💎 README In Static Site (RISS)
 <!-- end_remove -->
 
-[![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cljoly/readme-in-static-site)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk)
+[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)  [![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cljoly/readme-in-static-site)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk)
 
 <!-- insert
 {{< rawhtml >}}
@@ -57,6 +59,7 @@ In you .md file on GitHub, put:
     title: "README In Static Site (RISS)"
     date: 2021-08-21T10:15:54
     ---
+    <!-- Powered by https://cj.rs/riss -->
     end_insert -->
     <!-- remove -->
     
@@ -69,6 +72,7 @@ The output of the script will be:
     title: "README In Static Site (RISS)"
     date: 2021-08-21T10:15:54
     ---
+    <!-- Powered by https://cj.rs/riss -->
 
 and this piece of yaml will be hidden on GitHub!
 
@@ -106,6 +110,24 @@ Have you used this script to transform some markdown (or other) and insert it on
 ## Transformations Reference
 
 The transformations are driven by HTML comments, so that you can have different results when comments are ignored (e.g. in your GitHub README) and after executing the script on your markdown file.
+
+### Spread the Word
+
+If you find this script useful, please consider inserting the following in your readme:
+```html
+<!-- Powered by https://cj.rs/riss -->
+```
+This will help other people find the script. The script will even thank you if this is present!
+
+If you feel especially charitable, you could put this badge somewhere:
+
+[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
+
+with for instance this code:
+```markdown
+[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
+```
+
 
 ### Escaping
 
@@ -195,6 +217,8 @@ readme-update:
 
 Feel free to [open an issue][issue] to discuss something or to send a PR.
 
+See also the [Spread the Word][stw] section if you would like to make more folks aware of this script.
+
 ![GitHub](https://img.shields.io/github/license/cljoly/readme-in-static-site)
 
 [hugo]: https://gohugo.io/
@@ -202,4 +226,5 @@ Feel free to [open an issue][issue] to discuss something or to send a PR.
 [hugo_ascii]: https://cj.rs/gohugo-asciinema/
 [issue]: https://github.com/cljoly/readme-in-static-site/issues/new
 [fast]: #benchmark
+[stw]: #spread-the-word
 [script]: https://cj.rs/riss.awk

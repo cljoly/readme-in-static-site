@@ -19,6 +19,10 @@ BEGIN {
 	inserting = 0	# Sequence to insert the content of the comment started
 }
 
+/<!-+- Powered by https?:\/\/cj.rs\/riss -+->/ {
+	print("Thanks for spreading the word!") > "/dev/stderr"
+}
+
 /^<!--+ remove -+->$/ {
 	removing = 1
 	next
