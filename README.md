@@ -4,12 +4,12 @@ title: "README In Static Site (RISS)"
 date: 2021-08-21T08:15:54
 description: "💎 Insert your github readme in your static site."
 ---
-<!-- Powered by https://cj.rs/riss -->
 {{< github_badge >}}
 {{< rawhtml >}}
 <div class="badges">
 {{< /rawhtml >}}
 end_insert -->
+<!-- Powered by https://cj.rs/riss -->
 
 <!-- remove -->
 # 💎 README In Static Site (RISS)
@@ -59,8 +59,8 @@ In you .md file on GitHub, put:
     title: "README In Static Site (RISS)"
     date: 2021-08-21T10:15:54
     ---
-    <!-- Powered by https://cj.rs/riss -->
     end_insert -->
+    <!-- Powered by https://cj.rs/riss -->
     <!-- remove -->
     
     # README In Static Site (RISS)
