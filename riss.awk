@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-
+#
 # Copyright 2021 Clément Joly
 # https://cj.rs/riss
 #
@@ -14,16 +14,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 # Divide the input file into these types of sections:
 # * inserting: the current line is copied to the output, verbatim
 # * removing: the line is not copied to the output
 # To distinguish between these sections, the script interprets special
 # comments. These comments are removed from the output.
-
 BEGIN {
-	# In a removing section of the file. Starts in an inserting section
+	# Section identifier
 	removing = 0
 }
 
