@@ -30,7 +30,7 @@ BEGIN {
 	next
 }
 
-/^<!--+ end_remove -+->$/ || /^<!--+ insert$/ || /^end_insert -+->$/ {
+/^<!--+ end_remove -+->$|^<!--+ insert$|^end_insert -+->$/ {
 	removing = 0
 	next
 }
