@@ -32,7 +32,7 @@ The GitHub README of your repo needs to efficiently describe your project to Git
 * insert scripts that GitHub would prohibit (like [asciinema](#replace-asciinema-image)),
 * have your project’s homepage independent of your hosting platform, if you wish to change at some point.
 
-Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences!
+Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences! This [has been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in one [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
 
 ### Run it (nothing to install)
 
