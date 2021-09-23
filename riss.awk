@@ -1,6 +1,7 @@
 #!/usr/bin/awk -f
 
 # Copyright 2021 Clément Joly
+# https://cj.rs/riss
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +15,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# Divide the input file into these types of sections:
+# * inserting: the current line is copied to the output, verbatim
+# * removing: the line is not copied to the output
+# To distinguish between these sections, the script interprets special
+# comments. These comments are removed from the output.
+
 BEGIN {
-	removing = 0	# Sequence to remove started
-	inserting = 0	# Sequence to insert the content of the comment started
+	# In a removing section of the file. Starts in an inserting section
+	removing = 0
 }
 
 /^<!--+ remove -+->$/ {
@@ -24,18 +32,8 @@ BEGIN {
 	next
 }
 
-/^<!--+ end_remove -+->$/ {
+/^<!--+ end_remove -+->$/ || /^<!--+ insert$/ || /^end_insert -+->$/ {
 	removing = 0
-	next
-}
-
-/^<!--+ insert$/ {
-	inserting = 1
-	next
-}
-
-/^end_insert -+->$/ {
-	inserting = 0
 	next
 }
 
