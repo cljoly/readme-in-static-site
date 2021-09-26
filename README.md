@@ -44,7 +44,7 @@ awk -f riss.awk /path/to/my-project/README.md > content/my-project.md
 
 If you don’t use Hugo or Zola, no problem! It should also work with any markdown-based static-site generator. Just put the markdown file where it makes sense for that generator.
 
-To automatically update these files in your static-site sources, see [Automate with GitHub Actions](#automate-with-github-actions) below.
+To automatically update these files in your static-site sources, see [Automate with GitHub Actions](#automate-with-github-actions) below. Since RISS is based on Awk, there is nothing to install, besides copying the script itself!
 
 ## Example
 
