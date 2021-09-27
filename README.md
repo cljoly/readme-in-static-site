@@ -17,6 +17,13 @@ end_insert -->
 
 [![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)  [![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cljoly/readme-in-static-site)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk)
 
+<!-- remove -->
+![RISS in action](https://user-images.githubusercontent.com/7347374/134990638-d1ebb3ba-89db-4bbf-b00f-dc150e3b35fc.png)
+<!-- end_remove -->
+<!-- insert
+![RISS in action](/blog/putting-readmes-on-your-static-site/riss-in-action.png)
+end_insert -->
+
 <!-- insert
 {{< rawhtml >}}
 </div>
