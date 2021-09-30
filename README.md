@@ -41,6 +41,8 @@ The GitHub README of your repo needs to efficiently describe your project to Git
 
 Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences! This [has been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in one [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
 
+See the [introductory blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) for more details.
+
 ### Run it (nothing to install)
 
 To try it with [Hugo][hugo] or [Zola][zola], run the following in your static-site sources:
