@@ -41,9 +41,9 @@ The GitHub README of your repo needs to efficiently describe your project to Git
 
 Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences! This [has been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in one [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
 
-See the [introductory blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) for more details.
+See this [blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) for more details.
 
-### Run it (nothing to install)
+### Run It (Nothing to Install)
 
 To try it with [Hugo][hugo] or [Zola][zola], run the following in your static-site sources:
 ```sh
@@ -57,9 +57,9 @@ To automatically update these files in your static-site sources, see [Automate w
 
 ## Example
 
-### Add a front matter
+### Add a Front Matter
 
-Most static site generators require a “[frontmatter](https://gohugo.io/getting-started/configuration/#configure-front-matter)” at the beginning of a markdown file to attach some metadata. But you don’t want to add this to your GitHub README! Let’s hide this on GitHub and have it in the script’s output.
+Most static site generators require a “[front matter](https://gohugo.io/getting-started/configuration/#configure-front-matter)” at the beginning of a markdown file to attach some metadata. But you don’t want to add this to your GitHub README! Let’s hide this on GitHub and have it in the script’s output.
 
 In you .md file on GitHub, put:
 
@@ -221,7 +221,7 @@ readme-update:
 	curl https://raw.githubusercontent.com/cljoly/readme-in-static-site/main/README.md | awk -f riss.awk >content/readme-in-static-site.md
 ```
 
-## Contributions are welcome!
+## Contributions are Welcome!
 
 Feel free to [open an issue][issue] to discuss something or to send a PR.
 
