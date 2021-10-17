@@ -163,6 +163,12 @@ Use these two comments for text you want to have in your raw .md file, but not i
     <!-- remove -->
     <!-- end_remove -->
 
+## Breaking API Changes
+
+We follow [semver][] and any change that change would cause real world READMEs to be converted differently requires a new major version. In particular, the following is a breaking change:
+* adding new keywords (like `remove` or `insert`), as they may be used in the README prior to their introduction in RISS,
+* changing a keywords syntax.
+
 ## Benchmark
 
 **Processes 17600 lines in 10 ms**
@@ -239,3 +245,4 @@ See also the [Spread the Word][stw] section if you would like to make more folks
 [stw]: #spread-the-word
 [script]: https://cj.rs/riss.awk
 [gh_webhook]: https://mainawycliffe.dev/blog/github-actions-trigger-via-webhooks/
+[semver]: https://semver.org/
