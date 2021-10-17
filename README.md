@@ -221,6 +221,8 @@ readme-update:
 	curl https://raw.githubusercontent.com/cljoly/readme-in-static-site/main/README.md | awk -f riss.awk >content/readme-in-static-site.md
 ```
 
+Alternatively, you might configure your repositories to trigger a website rebuild when committing on your README, for instance using [GitHub actions webhooks][gh_webhook].
+
 ## Contributions are Welcome!
 
 Feel free to [open an issue][issue] to discuss something or to send a PR.
@@ -236,3 +238,4 @@ See also the [Spread the Word][stw] section if you would like to make more folks
 [fast]: #benchmark
 [stw]: #spread-the-word
 [script]: https://cj.rs/riss.awk
+[gh_webhook]: https://mainawycliffe.dev/blog/github-actions-trigger-via-webhooks/
