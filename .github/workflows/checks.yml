@@ -34,3 +34,14 @@ jobs:
         run: |
           gawk --pretty-print -f riss.awk
           diff awkprof.out riss.awk
+
+  build-macos:
+    runs-on: macos-latest
+    # Copy of the above
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          awk -f riss.awk test.md >tmp.md
+          diff tmp.md test_output.md
