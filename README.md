@@ -3,6 +3,10 @@
 title: "README In Static Site (RISS)"
 date: 2021-08-21T08:15:54
 description: "💎 Transform and insert your GitHub readme in your static site"
+tags:
+- Open Source
+- Tools
+- Static Site
 ---
 {{< github_badge >}}
 {{< rawhtml >}}
