@@ -7,6 +7,7 @@ tags:
 - Open Source
 - Tools
 - Static Site
+- Hugo
 ---
 {{< github_badge >}}
 {{< rawhtml >}}
