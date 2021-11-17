@@ -25,6 +25,13 @@ BEGIN {
 	removing = 0
 }
 
+# Should work in any section, although doing it in remove might be a bit pointless? Maybe not, could allow replace, maybe that’s an anti feature
+# TODO Check if the variable is empty?
+/^<!--+ riss_env \w+ -+->$/ {
+	print ENVIRON["RISS_"$3]
+	next
+}
+
 /^<!--+ remove -+->$/ {
 	removing = 1
 	next
