@@ -44,7 +44,7 @@ The GitHub README of your repo needs to efficiently describe your project to Git
 * insert scripts that GitHub would prohibit (like [asciinema](#replace-asciinema-image)),
 * have your project’s homepage independent of your hosting platform, if you wish to change at some point.
 
-Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences! This [has been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in one [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
+Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences! This [has](https://github.com/vhodges/stitcherd) [been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in [one](https://news.ycombinator.com/item?id=29305990) [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
 
 See this [blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) for more details.
 
@@ -233,6 +233,22 @@ readme-update:
 ```
 
 Alternatively, you might configure your repositories to trigger a website rebuild when committing on your README, for instance using [GitHub actions webhooks][gh_webhook].
+
+## Testimonials
+
+This project made it to the first page of [HackerNews](https://news.ycombinator.com/item?id=29304376) and [Lobsters](https://lobste.rs/s/a4jzvv/readme_static_site_riss) and got some flattering comments like:
+
+> I never really understood the idea to have a separate README and index page. Glad to see i'm not the only one :)
+
+[southerntofu](https://news.ycombinator.com/item?id=29305519)
+
+> Kudos for making it reusable and not specific to a single static site generator. […]
+
+[hannu](https://lobste.rs/s/a4jzvv/readme_static_site_riss#c_hiil4z)
+
+> […] A small but good idea, I like how simple riss.awk is.
+
+[lifthrasiir](https://news.ycombinator.com/item?id=29305070)
 
 ## Contributions are Welcome!
 
