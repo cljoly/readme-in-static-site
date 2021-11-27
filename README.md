@@ -147,7 +147,7 @@ with for instance this code:
 **It is important that your comment starts at the beginning of the line:** spaces are used for escaping, meaning that if the comment has spaces at the beginning of the line, it is ignored.
 
 So this is escaped
-```html
+```
     <!-- insert
 ```
 but this is not
