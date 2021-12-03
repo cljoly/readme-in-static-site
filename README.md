@@ -236,7 +236,9 @@ Alternatively, you might configure your repositories to trigger a website rebuil
 
 ## Testimonials
 
-This project made it to the first page of [HackerNews](https://news.ycombinator.com/item?id=29304376) and [Lobsters](https://lobste.rs/s/a4jzvv/readme_static_site_riss) and got some flattering comments like:
+[![](https://img.shields.io/badge/dynamic/json?color=Orange&label=HackerNews&query=%24.score&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F29304376.json&logo=ycombinator&color=orange)]()
+
+RISS made it to the first page of [HackerNews](https://news.ycombinator.com/item?id=29304376) and [Lobsters](https://lobste.rs/s/a4jzvv/readme_static_site_riss) and got comments like:
 
 > I never really understood the idea to have a separate README and index page. Glad to see i'm not the only one :)
 
