@@ -48,6 +48,24 @@ Chances are that for small projects, the page about your project is very similar
 
 See this [blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) for more details.
 
+## Testimonials
+
+[![](https://img.shields.io/badge/dynamic/json?color=Orange&label=HackerNews&query=%24.score&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F29304376.json&logo=ycombinator&color=orange)](https://news.ycombinator.com/item?id=29304376)
+
+RISS made it to the first page of [HackerNews](https://news.ycombinator.com/item?id=29304376) and [Lobsters](https://lobste.rs/s/a4jzvv/readme_static_site_riss) and got comments like:
+
+> I never really understood the idea to have a separate README and index page. Glad to see i'm not the only one :)
+
+[southerntofu](https://news.ycombinator.com/item?id=29305519)
+
+> Kudos for making it reusable and not specific to a single static site generator. […]
+
+[hannu](https://lobste.rs/s/a4jzvv/readme_static_site_riss#c_hiil4z)
+
+> […] A small but good idea, I like how simple riss.awk is.
+
+[lifthrasiir](https://news.ycombinator.com/item?id=29305070)
+
 ### Run It (Nothing to Install)
 
 To try it with [Hugo][hugo] or [Zola][zola], run the following in your static-site sources:
@@ -233,24 +251,6 @@ readme-update:
 ```
 
 Alternatively, you might configure your repositories to trigger a website rebuild when committing on your README, for instance using [GitHub actions webhooks][gh_webhook].
-
-## Testimonials
-
-[![](https://img.shields.io/badge/dynamic/json?color=Orange&label=HackerNews&query=%24.score&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F29304376.json&logo=ycombinator&color=orange)](https://news.ycombinator.com/item?id=29304376)
-
-RISS made it to the first page of [HackerNews](https://news.ycombinator.com/item?id=29304376) and [Lobsters](https://lobste.rs/s/a4jzvv/readme_static_site_riss) and got comments like:
-
-> I never really understood the idea to have a separate README and index page. Glad to see i'm not the only one :)
-
-[southerntofu](https://news.ycombinator.com/item?id=29305519)
-
-> Kudos for making it reusable and not specific to a single static site generator. […]
-
-[hannu](https://lobste.rs/s/a4jzvv/readme_static_site_riss#c_hiil4z)
-
-> […] A small but good idea, I like how simple riss.awk is.
-
-[lifthrasiir](https://news.ycombinator.com/item?id=29305070)
 
 ## Contributions are Welcome!
 
