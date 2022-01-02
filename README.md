@@ -143,23 +143,6 @@ Have you used this script to transform some markdown (or other) and insert it on
 
 The transformations are driven by HTML comments, so that you can have different results when comments are ignored (e.g. in your GitHub README) and after executing the script on your markdown file.
 
-### Spread the Word
-
-If you find this script useful, please consider inserting the following in your readme:
-```html
-<!-- Powered by https://cj.rs/riss -->
-```
-This will help other people find the script. *Thanks for spreading the word!*
-
-If you feel especially charitable, you could put this badge somewhere:
-
-[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
-
-with for instance this code:
-```markdown
-[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
-```
-
 ### Escaping
 
 **It is important that your comment starts at the beginning of the line:** spaces are used for escaping, meaning that if the comment has spaces at the beginning of the line, it is ignored.
@@ -185,6 +168,23 @@ Use these two comments for text you want to have in your raw .md file, but not i
 
     <!-- remove -->
     <!-- end_remove -->
+
+## Spread the Word
+
+If you find this script useful, please consider inserting the following in your readme:
+```html
+<!-- Powered by https://cj.rs/riss -->
+```
+This will help other people find the script. *Thanks for spreading the word!*
+
+If you feel especially charitable, you could put this badge somewhere:
+
+[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
+
+with for instance this code:
+```markdown
+[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
+```
 
 ## Breaking API Changes
 
