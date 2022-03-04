@@ -8,6 +8,7 @@ tags:
 - Tools
 - Static Site
 - Hugo
+- HackerNewsHomepage
 ---
 {{< github_badge >}}
 {{< rawhtml >}}
