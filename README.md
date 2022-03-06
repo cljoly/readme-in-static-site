@@ -21,7 +21,7 @@ end_insert -->
 # 💎 README In Static Site (RISS)
 <!-- end_remove -->
 
-[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)  [![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![GitHub code size in bytes](https://img.shields.io/github/size/cljoly/readme-in-static-site/riss.awk?color=purple)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/cljoly/readme-in-static-site?color=darkgreen&sort=semver)
+[![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)  [![CI](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![](https://img.shields.io/badge/codeberg-mirror-blue?logo=codeberg)](https://codeberg.org/cljoly/readme-in-static-site) [![GitHub code size in bytes](https://img.shields.io/github/size/cljoly/readme-in-static-site/riss.awk?color=purple)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/cljoly/readme-in-static-site?color=darkgreen&sort=semver)
 
 <!-- remove -->
 ![RISS in action](https://user-images.githubusercontent.com/7347374/134990638-d1ebb3ba-89db-4bbf-b00f-dc150e3b35fc.png)
