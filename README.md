@@ -51,7 +51,7 @@ See this [blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) fo
 
 ## Testimonials
 
-[![](https://img.shields.io/badge/dynamic/json?color=Orange&label=HackerNews&query=%24.score&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F29304376.json&logo=ycombinator&color=orange)](https://news.ycombinator.com/item?id=29304376)
+[![](https://img.shields.io/badge/dynamic/json?color=Orange&label=HackerNews&query=%24.score&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F29304376.json&logo=ycombinator&color=orange)](https://news.ycombinator.com/item?id=29304376) [![](https://img.shields.io/badge/dynamic/json?color=green&label=Lobsters&query=%24.score&url=https%3A%2F%2Flobste.rs%2Fs%2Fa4jzvv%2Freadme_static_site_riss.json&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAL0ALQAtZF7+HAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wCCBAuLt2rqugAAACMSURBVDjL1ZMxCsJQEERfRPEk9im9mGfxBpaCnaXmBraeQEidKsKz2eIb/peEIOLAwu4Ws7PMbsUAKlOwYCaWmd4aWCV1B4yXpR59R61SitwKDdBHfgPaSTsF8zOmHz5NLykAeCRqvuvCfxGcgP0YF3ZqHy7c1Yt6jfo8dCF3idvkQjcRRVQ/f6bZBC+RBoeZnlCyqwAAAABJRU5ErkJggg==&labelColor=500000)](https://lobste.rs/s/a4jzvv/readme_static_site_riss#c_hiil4z.json)
 
 RISS made it to the first page of [HackerNews](https://news.ycombinator.com/item?id=29304376) and [Lobsters](https://lobste.rs/s/a4jzvv/readme_static_site_riss) and got comments like:
 
