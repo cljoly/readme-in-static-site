@@ -139,7 +139,7 @@ With some shell scripting, you could also transform all the markdown files in yo
 Have you used this script to transform some markdown (or other) and insert it on your website? [Open an issue][issue] if you would like a link to your use case from this README!
 
 * **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://cj.rs/telescope-repo-nvim/); features an Asciinema clip
-* **neovide**: [readme](https://github.com/neovide/neovide/blob/main/README.md), [website](https://neovide.dev/), [PR setting this up](https://github.com/neovide/neovide/pull/1114)
+* **neovide**: [readme](https://github.com/neovide/neovide/blob/main/README.md), [first iteration of their website](https://neovide.dev/), [PR setting this up](https://github.com/neovide/neovide/pull/1114)
 
 ## Transformations Reference
 
