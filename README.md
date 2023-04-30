@@ -45,7 +45,7 @@ The GitHub README of your repo needs to efficiently describe your project to Git
 * insert scripts that GitHub would prohibit (like [asciinema](#replace-asciinema-image)),
 * have your project’s homepage independent of your hosting platform, if you wish to change at some point.
 
-Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, just describe the differences! This [has](https://github.com/vhodges/stitcherd) [been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in [one](https://news.ycombinator.com/item?id=29305990) [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
+Chances are that for small projects, the page about your project is very similar to the GitHub README. Don’t duplicate efforts, describe the differences! This [has](https://github.com/vhodges/stitcherd) [been](https://dev.to/lornasw93/github-readme-on-portfolio-project-page-51i8) a [long-awaited](https://richjenks.com/github-pages-from-readme/) [feature](https://medium.com/@bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-b08602d05e1c), in [one](https://news.ycombinator.com/item?id=29305990) [form](https://stackoverflow.com/q/48919200/4253785) or [another](https://stackoverflow.com/a/69296054/4253785).
 
 See this [blog post](https://cj.rs/blog/putting-readmes-on-your-static-site/) for more details.
 
@@ -214,7 +214,7 @@ $ hyperfine 'awk -f riss.awk README.md' 'awk -f riss.awk bench.md'
 
 ## Automate with GitHub Actions
 
-You can automatically update the markdown file in the sources of your site with GitHub Actions. You can put this very simple workflow in `.github/workflows/readme.yml`:
+You can automatically update the markdown file in the sources of your site with GitHub Actions. Add this workflow to, for instance, `.github/workflows/readme.yml`:
 
 ```yaml
 name: Update README files
