@@ -141,7 +141,6 @@ Have you used this script to transform some markdown (or other) and insert it on
 * **telescope-repo.nvim**: [readme](https://github.com/cljoly/telescope-repo.nvim/blob/master/README.md), [website](https://cj.rs/telescope-repo-nvim/); features an Asciinema clip.
 * **neovide**: [readme](https://github.com/neovide/neovide/blob/main/README.md), [first iteration of their website](https://neovide.dev/), [PR setting this up](https://github.com/neovide/neovide/pull/1114). They have now moved to mdbook and that’s great! RISS makes the first iteration of your website easy and you are free to move to more complete solutions when your project grows.
 * **Hugo APT Repository**: [readme](https://github.com/8hobbies/hugo-apt/blob/master/README.md), [website](https://hugo-apt.8hob.io/), [PR setting it up](https://github.com/8hobbies/hugo-apt/pull/12).
-* **Your project**: please feel free to open an issue if you would like to suggest adding your project to this list.
 
 ## Transformations Reference
 
