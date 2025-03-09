@@ -22,6 +22,8 @@ end_insert -->
 # 💎 README In Static Site (RISS)
 <!-- end_remove -->
 
+[![Get it on codeberg](https://raw.githubusercontent.com/cljoly/readme-in-static-site/refs/heads/moved/get-it-on-codeberg.svg)](https://codeberg.org/cljoly/readme-in-static-site)
+
 [![GitHub code size in bytes](https://img.shields.io/github/size/cljoly/readme-in-static-site/riss.awk?color=purple)](https://github.com/cljoly/readme-in-static-site/blob/main/riss.awk) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/cljoly/readme-in-static-site?color=darkgreen&sort=semver) [![CI](https://codeberg.org/cljoly/readme-in-static-site/actions/workflows/checks.yml/badge.svg)](https://github.com/cljoly/readme-in-static-site/actions/workflows/checks.yml) [![](https://img.shields.io/badge/powered%20by-riss-lightgrey)](https://cj.rs/riss)
 
 <!-- remove -->
