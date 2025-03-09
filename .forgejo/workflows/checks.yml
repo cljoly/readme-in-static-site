@@ -12,7 +12,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install gawk
-        run: apt install gawk
+        run: |
+          apt update -y
+          apt install -y gawk
 
       - name: Run tests
         run: |
